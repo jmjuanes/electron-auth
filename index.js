@@ -23,7 +23,7 @@ module.exports = function(provider, opt, cb)
     if(error){ return cb(error); }
 
     //Initialize the new browser window
-    var window = new BrowserWindow({ width: 800, height: 600, show: false, 'node-integration': false });
+    var window = new BrowserWindow({ width: 800, height: 600, webPreferences: { nodeIntegration: false } });
 
     //Load the url
     window.loadURL(auth_url);
