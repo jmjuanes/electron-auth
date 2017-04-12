@@ -11,7 +11,7 @@ provider._auth_url = 'https://github.com/login/oauth/authorize?';
 provider._token_url = 'https://github.com/login/oauth/access_token';
 
 //Build the authentication url
-provider.authentication_url = function(opt, cb)
+provider.authorization_url = function(opt, cb)
 {
   //Check the options
   if(typeof opt.client_id !== 'string'){ return cb(new Error('No client ID provided', null)); }
