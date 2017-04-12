@@ -56,14 +56,11 @@ provider.authorization_done = function(opt, url, window, cb)
   // If there is a code, proceed to get token from github
   if(code)
   {
-    //Destroy the window
-    window.destroy();
-
     //Initialize the form object
     var form = { client_id: opt.client_id, client_secret : opt.client_secret, state: opt.state, code: code };
 
     //Get the token
-    return request.post({ url: provider._token_url, form: form, json: true }, function(e, res, body)
+    return request({ url: provider._token_url, method: 'POST', form: form, json: true }, function(e, res, body)
     {
       //Check for error
       if(e){ return cb(e, null); }
