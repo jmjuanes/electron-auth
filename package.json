@@ -5,6 +5,7 @@
   "keywords": [ "electron", "electron-plugin", "auth" ],
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "main": "./index.js",
+  "dependencies": { "request": "2.81.0" },
   "repository": { "type": "git", "url": "https://github.com/jmjuanes/electron-auth" },
   "license": "MIT"
 }
