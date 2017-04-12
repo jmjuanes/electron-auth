@@ -29,7 +29,7 @@ provider.authorization_url = function(opt, cb)
   if(typeof opt.scope === 'string'){ opt.scope = [ opt.scope ]; }
 
   //Check the allow signup value
-  if(typeof opt.allow_signup !== 'boolean'){ opt.alow_signup = true; }
+  if(typeof opt.allow_signup !== 'boolean'){ opt.allow_signup = true; }
 
   //Initialize the authentication url
   var url = provider._auth_url + 'client_id=' + opt.client_id + '&' + 'state=' + opt.state;
