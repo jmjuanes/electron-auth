@@ -6,6 +6,8 @@
 
 > A dead simple electron library to handle the OAuth authentication for some providers
 
+**NOTE**: More authorization providers and documentation are in progress. Interested in contribute? You are welcome :smile:
+
 ## Installation 
 
 ```
