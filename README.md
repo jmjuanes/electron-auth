@@ -17,7 +17,7 @@ npm install --save electron-auth
 ```javascript
 //Import dependencies
 var app = require('electron').app;
-var auth = require('../index.js');
+var auth = require('electron-auth');
 
 
 //Initialize the application
