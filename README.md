@@ -19,7 +19,6 @@ npm install --save electron-auth
 var app = require('electron').app;
 var auth = require('electron-auth');
 
-
 //Initialize the application
 app.on('ready', function()
 {
@@ -35,11 +34,25 @@ app.on('ready', function()
 });
 ```
 
+## API 
+
+#### auth(provider, options, callback)
+
+Perform the user authentication for the desired provider. This method accepts the following arguments: 
+
+- `provider`: an object with the information about the provider. You can use the built-in providers or use a custom provider. 
+- `options`: an object with the options. 
+- `callback`: a function that will be executed when the authentication is done or when there is an error during the process of authentication.
+
 ## Providers 
+
+All the supported providers are stored in `auth.providers.PROVIDER_NAME`. You can also use your own provider.
 
 ### GitHub
 
 Read more about the GitHub Authentication: https://developer.github.com/v3/oauth/ 
+
+
 
 ## Related 
 
