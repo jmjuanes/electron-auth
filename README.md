@@ -14,9 +14,32 @@ npm install --save electron-auth
 
 ## Usage 
 
+```javascript
+//Import dependencies
+var app = require('electron').app;
+var auth = require('../index.js');
+
+
+//Initialize the application
+app.on('ready', function()
+{
+  //Initialize the github auth options
+  var opt = { client_id: 'YOUR_CLIENT_ID', client_secret: 'YOUR_CLIENT_SECRET' };
+
+  //Handle the github authentication
+  return auth(auth.providers.github, opt, function(error, token)
+  {
+    //Do your magic with the token 
+    //....
+  });
+});
+```
+
 ## Providers 
 
 ### GitHub
+
+Read more about the GitHub Authentication: https://developer.github.com/v3/oauth/ 
 
 ## Related 
 
