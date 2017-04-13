@@ -6,6 +6,17 @@
 
 > A dead simple electron library to handle the OAuth authentication for some providers
 
+## Installation 
+
+```
+npm install --save electron-auth
+```
+
+## Usage 
+
+## Providers 
+
+### GitHub
 
 ## Related 
 
