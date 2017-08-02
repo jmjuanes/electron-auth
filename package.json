@@ -1,7 +1,7 @@
 {
   "name": "electron-auth",
   "description": "A simple electron library to handle the OAuth authentication for some providers",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "keywords": [ "electron", "electron-plugin", "auth" ],
   "author": "Josemi Juanes <josemijuanes@gmail.com>",
   "main": "./index.js",
