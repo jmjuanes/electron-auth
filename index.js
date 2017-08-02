@@ -2,7 +2,7 @@
 var electron = require('electron');
 
 //Import electron modules
-var BrowserWindow = electron.BrowserWindow; //Module to create native browser window.
+var BrowserWindow = electron.BrowserWindow || electron.remote.BrowserWindow;
 
 //Auth object
 module.exports = function(provider, opt, cb)
